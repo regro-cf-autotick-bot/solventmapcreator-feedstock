@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script: "{{ PYTHON }} -m pip install . -vv"
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=3.6
     - rdkit
-    - matplotlib
+    - matplotlib-base
     - numpy
     - pandas
     - scipy
